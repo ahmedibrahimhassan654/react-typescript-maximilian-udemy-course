@@ -14,3 +14,22 @@ let userID:string|number
 
 userID="ACD3$t"
 userID=5
+
+
+//let user:object
+let user:{
+    name:string,
+    age:number,
+    isAdmin:boolean,
+    id:string|number
+}
+
+
+user={
+    name:'ahmed',
+    age:10,
+    isAdmin:true,
+    id:'1452asas'
+}
+
+// user={}
