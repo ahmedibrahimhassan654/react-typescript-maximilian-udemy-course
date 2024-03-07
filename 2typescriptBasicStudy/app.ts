@@ -33,3 +33,7 @@ user={
 }
 
 // user={}
+
+let hoppies:Array <string> //string[] ,number[],boolean[]
+
+hoppies=["asas","asas","asassa"]
