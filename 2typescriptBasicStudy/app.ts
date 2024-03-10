@@ -33,7 +33,17 @@ user={
 }
 
 // user={}
-
+////////////Array Types////////////////
 let hoppies:Array <string> //string[] ,number[],boolean[]
 
 hoppies=["asas","asas","asassa"]
+
+/////////////FUNCTION /////////////////////
+                                // if the function doesn't return somthing we make it void or undifined 
+                                //but if the function return somthing we but it in return are 
+                                //number or string 
+function add(a:number,b:number) :number {
+    const result =a+b
+    // console.log(result);
+    return result
+}
