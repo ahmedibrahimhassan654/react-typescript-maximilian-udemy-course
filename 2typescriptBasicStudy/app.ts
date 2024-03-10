@@ -60,3 +60,19 @@ calcFn(a,b)
 }
 
 calculate(2,5,add)
+
+
+
+
+///////lec 18
+interface Credentials{
+    password:string,
+    email:string
+}
+
+let cred:Credentials
+
+cred={
+    email:'test@gmai.com',
+    password:'abc'
+}
