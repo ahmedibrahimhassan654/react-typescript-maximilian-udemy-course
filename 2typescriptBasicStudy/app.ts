@@ -10,19 +10,23 @@ let isValid = true;
 
 // string, number, boolean
 
-let userID:string|number
+type StringorNum= string|number
+
+let userID:StringorNum
 
 userID="ACD3$t"
 userID=5
 
 
 //let user:object
-let user:{
+type UserObject={
     name:string,
     age:number,
     isAdmin:boolean,
-    id:string|number
+    id:StringorNum
 }
+
+let user:UserObject
 
 
 user={
@@ -49,7 +53,9 @@ function add(a:number,b:number) :number {
 }
 
 
-function calculate(a:number,b:number,calcFn:(a:number,b:number)=>number){
+type AddFun=(a:number,b:number)=>number
+
+function calculate(a:number,b:number,calcFn:AddFun){
 calcFn(a,b)
 }
 
