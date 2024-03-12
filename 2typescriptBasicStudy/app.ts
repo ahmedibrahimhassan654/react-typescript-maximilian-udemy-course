@@ -133,3 +133,9 @@ role = 'admin';
 role = 'user';
 role = 'editor';
 // role = 'abc';
+//22 - Adding Type Guards
+function performAction(action: string | number, role: Role) {
+    if (role === 'admin' && typeof action === 'number') {
+      // ...
+    }
+  }
