@@ -76,3 +76,17 @@ cred={
     email:'test@gmai.com',
     password:'abc'
 }
+
+
+class AuthCredentials implements Credentials{
+    password:string
+    email:string
+    userName:string
+
+}
+
+function login(credentials:Credentials) {
+    
+}
+
+login (new AuthCredentials())
