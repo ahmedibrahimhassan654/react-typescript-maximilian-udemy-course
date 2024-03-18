@@ -135,7 +135,41 @@ role = 'editor';
 // role = 'abc';
 //22 - Adding Type Guards
 function performAction(action: string | number, role: Role) {
-    if (role === 'admin' && typeof action === 'number') {
+    if (role === 'admin' && typeof action === 'string') {
       // ...
     }
   }
+
+  //24 generic types features
+
+  let roles :Array<Role> //Role []
+  roles=["admin","editor"]
+  type DataStorage<T> = {
+    storage: T[];
+    add: (data: T) => void;
+  };
+  
+  const textStorage: DataStorage<string> = {
+    storage: [],
+    add(data) {
+      this.storage.push(data);
+    },
+  };
+  
+  const userStorage: DataStorage<UserObject> = {
+    storage: [],
+    add(user) {},
+  };
+  
+  function merge<T, U>(a: T, b: U) {
+    return {
+      ...a,
+      ...b,
+    };
+  }
+  
+  const newUser = merge(
+    { name: 'Max' },
+    { age: 34 }
+  );
+  
